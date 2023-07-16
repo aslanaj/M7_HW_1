@@ -1,6 +1,6 @@
 package com.simbadev.m7_hw_1.domain.repositories
 
-import com.simbadev.m7_hw_1.domain.Resource
+import com.simbadev.m7_hw_1.domain.utils.Resource
 import com.simbadev.m7_hw_1.domain.models.Car
 import kotlinx.coroutines.flow.Flow
 

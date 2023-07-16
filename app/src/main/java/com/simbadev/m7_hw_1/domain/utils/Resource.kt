@@ -1,4 +1,4 @@
-package com.simbadev.m7_hw_1.domain
+package com.simbadev.m7_hw_1.domain.utils
 
 sealed class Resource<T>(
     val data: T? = null,

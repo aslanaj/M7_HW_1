@@ -1,4 +1,4 @@
-package com.simbadev.m7_hw_1.di
+package com.simbadev.m7_hw_1.domain.di
 
 import android.content.Context
 import androidx.room.Room

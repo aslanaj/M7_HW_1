@@ -3,7 +3,7 @@ package com.simbadev.m7_hw_1.data.repositories
 import com.simbadev.m7_hw_1.data.local.CarDao
 import com.simbadev.m7_hw_1.data.mappers.toCar
 import com.simbadev.m7_hw_1.data.mappers.toEntity
-import com.simbadev.m7_hw_1.domain.Resource
+import com.simbadev.m7_hw_1.domain.utils.Resource
 import com.simbadev.m7_hw_1.domain.models.Car
 import com.simbadev.m7_hw_1.domain.repositories.CarRepository
 import kotlinx.coroutines.Dispatchers
