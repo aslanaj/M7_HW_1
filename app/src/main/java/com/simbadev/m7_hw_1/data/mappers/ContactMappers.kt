@@ -1,8 +1,9 @@
 package com.simbadev.m7_hw_1.data.mappers
 
-import com.simbadev.m7_hw_1.data.models.ContactEntity
-import com.simbadev.m7_hw_1.domain.models.Contact
+import com.simbadev.m7_hw_1.data.models.CarEntity
+import com.simbadev.m7_hw_1.domain.models.Car
 
-fun Contact.toEntity() = ContactEntity(id, name, number, address)
 
-fun ContactEntity.toContact() = Contact(id, name, number, address)
+
+fun Car.toEntity() = CarEntity(id,name, year, maxSpeed)
+fun CarEntity.toCar() = Car(id, name, year, maxSpeed)

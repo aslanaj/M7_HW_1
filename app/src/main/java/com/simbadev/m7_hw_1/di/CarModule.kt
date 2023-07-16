@@ -2,11 +2,10 @@ package com.simbadev.m7_hw_1.di
 
 import android.content.Context
 import androidx.room.Room
-import androidx.room.RoomDatabase
-import com.simbadev.m7_hw_1.data.local.ContactDataBase
-import com.simbadev.m7_hw_1.data.local.ContactsDao
-import com.simbadev.m7_hw_1.data.repositories.ContactRepositoryImpl
-import com.simbadev.m7_hw_1.domain.repositories.ContactRepository
+import com.simbadev.m7_hw_1.data.local.CarDataBase
+import com.simbadev.m7_hw_1.data.local.CarDao
+import com.simbadev.m7_hw_1.data.repositories.CarRepositoryImpl
+import com.simbadev.m7_hw_1.domain.repositories.CarRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -16,7 +15,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object ContactModule {
+object CarModule {
 
     @Singleton
     @Provides
@@ -24,17 +23,17 @@ object ContactModule {
         @ApplicationContext context: Context
     ) = Room.databaseBuilder(
         context,
-        ContactDataBase::class.java,
+        CarDataBase::class.java,
         "contact_db"
     )
 
     @Provides
-    fun provideContactDao(contactDataBase: ContactDataBase) = contactDataBase.contactDao()
+    fun provideCarDao(carDataBase: CarDataBase) = carDataBase.carDao()
 
     @Provides
 
-    fun provideContactRepository(contactsDao: ContactsDao): ContactRepository{
-        return ContactRepositoryImpl(contactsDao)
+    fun provideCarRepository(carDao: CarDao): CarRepository{
+        return CarRepositoryImpl(carDao)
     }
 
 

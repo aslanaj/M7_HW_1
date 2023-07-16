@@ -1,9 +1,9 @@
 package com.simbadev.m7_hw_1.domain.models
 
 
-data class Contact(
+data class Car(
     val id: Int,
     val name: String,
-    val number: Int,
-    val address: String
+    val year: Int,
+    val maxSpeed: Int,
 )
