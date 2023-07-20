@@ -1,9 +1,11 @@
-package com.simbadev.M7_HW_1.domain.di
+package com.simbadev.M7_HW_1.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.simbadev.M7_HW_1.data.repositories.CarRepositoryImpl
-import com.simbadev.m7_hw_1.domain.repositories.CarRepository
+import com.simbadev.M7_HW_1.data.local.CarDao
+import com.simbadev.M7_HW_1.data.local.CarDataBase
+import com.simbadev.M7_HW_1.domain.repositories.CarRepository
+
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -30,7 +32,7 @@ object CarModule {
 
     @Provides
 
-    fun provideCarRepository(carDao: CarDao): CarRepository{
+    fun provideCarRepository(carDao: CarDao): CarRepository {
         return com.simbadev.M7_HW_1.data.repositories.CarRepositoryImpl(carDao)
     }
 

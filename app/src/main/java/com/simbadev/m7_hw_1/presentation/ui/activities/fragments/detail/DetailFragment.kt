@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.simbadev.m7_hw_1.R
+import com.simbadev.m7_hw_1.base.BaseFragment
 import com.simbadev.m7_hw_1.databinding.FragmentDetailBinding
 
 
-class DetailFragment : Fragment() {
+class DetailFragment : BaseFragment() {
 private lateinit var binding: FragmentDetailBinding
 
     override fun onCreateView(
