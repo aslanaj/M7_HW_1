@@ -7,7 +7,9 @@
     android:layout_gravity="center"
 
     android:orientation="vertical"
-    tools:context=".presentation.ui.fragments.car_list.CarFragment">
+    tools:context="com.simbadev.m7_hw_1.presentation.ui.activities.fragments.car_list.">
+
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_input_layout_name"
@@ -76,6 +78,8 @@
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
+
     <Button
         android:id="@+id/btn_save"
         android:layout_width="match_parent"
@@ -84,6 +88,12 @@
         android:backgroundTint="@color/blue"
         android:text="Save"
         android:textSize="24sp" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_car"
@@ -91,6 +101,7 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/item_car"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
 
 
 </LinearLayout>

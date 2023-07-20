@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center|top"
     android:orientation="vertical"
-    tools:context=".presentation.ui.fragments.detail.DetailFragment">
+    tools:context="com.simbadev.M7_HW_1presentation.ui.activities.fragments.detail.DetailFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
